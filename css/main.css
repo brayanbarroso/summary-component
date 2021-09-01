@@ -84,7 +84,7 @@ p {
 
 .card-suscription {
   position: absolute;
-  inset-block-start: 20px;
+  inset-block-start: 16px;
   inset-inline-start: 75px;
 }
 
@@ -124,7 +124,7 @@ button {
 
 .button-primary {
   background-color: var(--Bright-blue);
-  box-shadow: 0px 18px 8px 3px rgba(79, 99, 184, 0.32);
+  box-shadow: 0px 18px 8px 3px rgba(79, 98, 184, 0.158);
   /* box-shadow: 0px 10px 13px -7px #000000, 0px 20px 0px 0px rgba(0, 0, 0, 0); */
   color: var(--Very-pale-blue);
   margin-block-end: 10px;
@@ -159,4 +159,25 @@ footer {
 
 .attribution a:hover {
   color: blue;
+}
+
+/* ----- Desktop ----- */
+@media only screen and (min-width: 950px) {
+  body {
+    background: var(--Pale-blue) url("../images/pattern-background-desktop.svg")
+      no-repeat;
+    background-size: contain;
+  }
+
+  .wrapper {
+    inline-size: 450px;
+  }
+
+  .card-content {
+    inline-size: 355px;
+  }
+
+  .attribution {
+    font-size: 12px;
+  }
 }
