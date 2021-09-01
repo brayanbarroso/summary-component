@@ -15,6 +15,7 @@
 body {
   background: var(--Pale-blue) url("../images/pattern-background-mobile.svg")
     no-repeat;
+  background-size: contain;
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
 }
@@ -27,6 +28,13 @@ h2 {
   font-size: 25px;
   font-weight: 900;
   line-height: 30px;
+}
+
+p {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  line-height: 30px;
+  margin-block-end: 20px;
 }
 
 .section-card {
@@ -56,18 +64,11 @@ h2 {
   margin-block-end: 20px;
 }
 
-.card-title p {
-  color: var(--Desaturated-blue);
-  font-weight: 500;
-  line-height: 30px;
-  margin-block-end: 20px;
-}
-
 .card-price {
-  border: 1px solid red;
-  background-color: ;
-  border-radius: 20px;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  block-size: 80px;
+  margin-block-end: 24px;
   position: relative;
 }
 
@@ -75,5 +76,57 @@ h2 {
   block-size: 50px;
   inline-size: 50px;
   position: absolute;
-  inset-inline-start: 20px;
+  inset-block-start: 15px;
+  inset-inline-start: 10px;
+}
+
+.card-suscription {
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-start: 75px;
+}
+
+.card-suscription h4 {
+  font-weight: 900;
+}
+
+.card-price .card-link {
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 30px;
+}
+
+.card-link a {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  display: block;
+  inline-size: 100%;
+}
+
+.card-button {
+  margin-block-end: 30px;
+}
+
+.button-primary {
+  background-color: var(--Bright-blue);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 20px 0px 0px rgba(0, 0, 0, 0);
+  color: var(--Very-pale-blue);
+  margin-block-end: 10px;
+  padding: 20px;
+}
+
+.button-secundary {
+  background-color: transparent;
+  color: var(--Desaturated-blue);
+  margin-block-end: 30px;
+  padding: 20px;
 }
