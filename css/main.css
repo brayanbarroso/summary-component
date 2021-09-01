@@ -18,3 +18,62 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
 }
+
+img {
+  inline-size: 100%;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 30px;
+}
+
+.section-card {
+  margin-block-start: 70px;
+}
+
+.wrapper {
+  background-color: var(--Very-pale-blue);
+  border-radius: 20px;
+  inline-size: 325px;
+  margin: auto;
+}
+
+.card-image img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-content {
+  inline-size: 275px;
+  margin: auto;
+  margin-block-start: 30px;
+  text-align: center;
+}
+
+.card-title h2 {
+  margin-block-end: 20px;
+}
+
+.card-title p {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  line-height: 30px;
+  margin-block-end: 20px;
+}
+
+.card-price {
+  border: 1px solid red;
+  background-color: ;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.card-price img {
+  block-size: 50px;
+  inline-size: 50px;
+  position: absolute;
+  inset-inline-start: 20px;
+}
