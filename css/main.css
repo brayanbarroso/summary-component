@@ -1,6 +1,7 @@
 :root {
   --Pale-blue: hsl(225, 100%, 94%);
   --Bright-blue: hsl(245, 75%, 52%);
+  --blue: hsla(245, 75%, 53%, 0.308);
 
   --Very-pale-blue: hsl(225, 100%, 98%);
   --Desaturated-blue: hsl(224, 23%, 55%);
@@ -44,6 +45,7 @@ p {
 .wrapper {
   background-color: var(--Very-pale-blue);
   border-radius: 20px;
+  box-shadow: 5px 25px 82px -5px rgba(226, 231, 240, 0.94);
   inline-size: 325px;
   margin: auto;
 }
@@ -101,6 +103,10 @@ p {
   font-weight: bold;
 }
 
+.card-link a:hover {
+  color: hsl(228, 45%, 44%);
+}
+
 button {
   border: none;
   border-radius: 10px;
@@ -118,10 +124,15 @@ button {
 
 .button-primary {
   background-color: var(--Bright-blue);
-  box-shadow: 0px 10px 13px -7px #000000, 0px 20px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 18px 8px 3px rgba(79, 99, 184, 0.32);
+  /* box-shadow: 0px 10px 13px -7px #000000, 0px 20px 0px 0px rgba(0, 0, 0, 0); */
   color: var(--Very-pale-blue);
   margin-block-end: 10px;
   padding: 20px;
+}
+
+.button-primary:hover {
+  background-color: hsl(228, 45%, 44%);
 }
 
 .button-secundary {
@@ -129,4 +140,23 @@ button {
   color: var(--Desaturated-blue);
   margin-block-end: 30px;
   padding: 20px;
+}
+
+.button-secundary:hover {
+  color: var(--Dark-blue);
+}
+/* -----footer----- */
+footer {
+  margin-inline: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: blue;
 }
